@@ -88,38 +88,38 @@ class EosPaper extends PolymerElement {
           const privateQr = qrcode[1];
           const htmlToPrint = `
           <html>
-          <head>
-          <title>EOS Paper Wallet</title>
-            <style>
-            :host {
-              display: block;
-            }
-            .container {
-              width: 100%; 
-              height: 200px;
-              display: flex; 
-              flex-wrap: nowrap;
-              padding: 20px;
-            }
-            .qrcode {
-              width: 250px%; 
-              height: 250px;
-              padding: 20px;
-            }
-            .text-container{
-              padding-left: 50px;
-            }
-            </style>
-          </head>
-          <body>
-            <div class="container">
-            <div class="qrcode"><img src="${publicQr}"></div>
-            <div class="qrcode""><img src="${privateQr}"></div>
-            </div>
-            <div class="text-container">
-            <div>Public Key: ${this.publicKey}</br></br> Private Key: ${this.privateKey}</div>
-            </div>
-          </body>
+            <head>
+            <title>EOS Paper Wallet</title>
+              <style>
+              :host {
+                display: block;
+              }
+              .container {
+                width: 100%; 
+                height: 200px;
+                display: flex; 
+                flex-wrap: nowrap;
+                padding: 20px;
+              }
+              .qrcode {
+                width: 250px%; 
+                height: 250px;
+                padding: 20px;
+              }
+              .text-container{
+                padding-left: 50px;
+              }
+              </style>
+            </head>
+            <body>
+              <div class="container">
+                <div class="qrcode"><img src="${publicQr}"></div>
+                <div class="qrcode""><img src="${privateQr}"></div>
+              </div>
+              <div class="text-container">
+                <div>Public Key: ${this.publicKey}</br></br> Private Key: ${this.privateKey}</div>
+              </div>
+            </body>
           </html>
           `;
           console.log(htmlToPrint)
