@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>eos-paper demo</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <script type="module">
+      import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+      import '@polymer/iron-demo-helpers/demo-snippet';
+    </script>
+
+    <script type="module" src="../eos-paper.js"></script>
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered" style="max-width:1000px">
+      <h3>Basic eos-paper demo</h3>
+      <demo-snippet>
+        <template>
+          <eos-paper debug id-hash="0bfe3fec26cac92750a79371cc8d7c36caf230523ecee4c94e92c0e4321b8810" password="secret!!"></eos-paper>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>
